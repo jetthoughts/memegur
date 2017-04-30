@@ -5,8 +5,8 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
-		"lint": "eslint *.js; exit 0",
-		"lint:fix": "eslint --fix *.js; exit 0"
+		"lint": "eslint */*.js; exit 0",
+		"lint:fix": "eslint --fix */*.js; exit 0"
 	},
 	"dependencies": {
 		"native-base": "^2.1.3",
