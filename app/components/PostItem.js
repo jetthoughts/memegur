@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
 import PostSection from './PostSection';
-import PostCounterWithIcon from './PostCounterWithIcon';
+import PostCounters from './PostCounters';
 
 class PostItem extends Component {
   render() {
@@ -14,12 +14,7 @@ class PostItem extends Component {
           source={{ uri: this.props.post.source }}
         />
 
-        {/* TODO: Counters list component - https://github.com/EnragedWildkin/memegur/issues/13 */}
-        <View style={{ flex: 1, justifyContent: 'space-around' }}>
-          <PostCounterWithIcon value={this.props.post.rates} icon='arrow-round-up' />
-          <PostCounterWithIcon value={this.props.post.comments} icon='chatboxes' />
-          <PostCounterWithIcon value={this.props.post.views} icon='eye' />
-        </View>
+        <PostCounters post={this.props.post}/>
       </PostSection>
     );
   }
