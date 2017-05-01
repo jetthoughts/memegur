@@ -5,26 +5,49 @@ import PostCounters from './PostCounters';
 
 class PostItem extends Component {
   render() {
-    return(
-      // TODO: Post component - https://github.com/EnragedWildkin/memegur/issues/15
-      <PostSection>
-        {/* TODO: Image component - https://github.com/EnragedWildkin/memegur/issues/14 */}
-        <Image
-          style={styles.postImageStyle}
-          source={{ uri: this.props.post.source }}
-        />
+    const { postContainerStyle, postTitleStyle, postImageStyle } = styles;
 
-        <PostCounters post={this.props.post}/>
-      </PostSection>
+    return (
+      <View style={postContainerStyle}>
+        <PostSection style={{ flexDirection: 'column' }}>
+          <Text
+            numberOfLines={1}
+            style={postTitleStyle}>
+            {this.props.post.title}
+          </Text>
+
+          <View style={{ flexDirection: 'row' }}>
+            {/* TODO: Image component - https://github.com/EnragedWildkin/memegur/issues/14 */}
+            <Image
+              style={postImageStyle}
+              source={{ uri: this.props.post.source }}
+            />
+
+            <PostCounters post={this.props.post}/>
+          </View>
+        </PostSection>
+      </View>
     );
   }
 }
 
 const styles = {
+  postContainerStyle: {
+    backgroundColor: '#333',
+    padding: 10,
+    paddingBottom: 0
+  },
   postImageStyle: {
-    flex: 3,
+    flex: 4,
     height: 150,
     width: 150
+  },
+  postTitleStyle: {
+    padding: 5,
+    paddingBottom: 10,
+    color: '#fff',
+    fontSize: 14,
+    flex: 1
   }
 };
 
