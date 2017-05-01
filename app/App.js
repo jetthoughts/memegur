@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import RootContainer from './containers/RootContainer';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
 
 export default class App extends Component {
   render() {
     return (
-      <RootContainer />
+      <Provider store={createStore(reducers)}>
+        <RootContainer />
+      </Provider>
     );
   }
 }

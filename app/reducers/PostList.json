@@ -1,0 +1,52 @@
+/* Remove after starting using imgur api */
+[
+  {
+    "id": 0,
+    "source": "https://cdn.pixabay.com/photo/2017/04/14/16/46/red-fox-2230731_1280.jpg",
+    "rates": 159,
+    "comments": 18,
+    "views": 103518
+  },
+  {
+    "id": 1,
+    "source": "https://cdn.pixabay.com/photo/2017/04/11/21/34/giraffe-2222908_1280.jpg",
+    "rates": 123,
+    "comments": 532,
+    "views": 2312315
+  },
+  {
+    "id": 2,
+    "source": "https://cdn.pixabay.com/photo/2017/04/03/00/16/shire-horse-2197214_1280.jpg",
+    "rates": 23,
+    "comments": 4,
+    "views": 5513
+  },
+  {
+    "id": 3,
+    "source": "https://cdn.pixabay.com/photo/2017/04/11/21/00/dogs-2222801_1280.jpg",
+    "rates": 311,
+    "comments": 123,
+    "views": 52533
+  },
+  {
+    "id": 4,
+    "source": "https://cdn.pixabay.com/photo/2014/05/26/13/30/malinois-354527_1280.jpg",
+    "rates": 1114,
+    "comments": 241,
+    "views": 255432
+  },
+  {
+    "id": 5,
+    "source": "https://cdn.pixabay.com/photo/2014/03/04/19/53/dog-279698_1280.jpg",
+    "rates": 8352,
+    "comments": 432,
+    "views": 552136
+  },
+  {
+    "id": 6,
+    "source": "https://cdn.pixabay.com/photo/2017/03/26/10/33/stone-goat-2175189_1280.jpg",
+    "rates": 1,
+    "comments": 0,
+    "views": 19
+  },
+];
