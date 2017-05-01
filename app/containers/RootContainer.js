@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Title, Content, Body } from 'native-base';
 import FooterContainer from './FooterComponent';
+import PostList from '../components/PostList';
 import MainHeader from '../components/MainHeader';
 
 export default class RootContainer extends Component {
@@ -8,7 +9,7 @@ export default class RootContainer extends Component {
     return (
       <Container>
         <MainHeader />
-        <Content />
+        <PostList />
         <FooterContainer />
       </Container>
     );
