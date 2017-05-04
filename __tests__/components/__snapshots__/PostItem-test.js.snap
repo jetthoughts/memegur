@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Post Item /> renders post information 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#333",
+      "padding": 10,
+      "paddingBottom": 0,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "dimgray",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "position": "relative",
+        },
+        Object {
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#fff",
+          "flex": 1,
+          "fontSize": 14,
+          "padding": 5,
+          "paddingBottom": 10,
+        }
+      }
+    >
+      Test title
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "example.com/url",
+          }
+        }
+        style={
+          Object {
+            "flex": 4,
+            "height": 150,
+            "width": 150,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "justifyContent": "space-around",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            active={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "lightgray",
+                  "fontSize": 18,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "lightgray",
+                "fontSize": 12,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            10
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            active={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "lightgray",
+                  "fontSize": 18,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "lightgray",
+                "fontSize": 12,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            10
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            active={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "lightgray",
+                  "fontSize": 18,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "lightgray",
+                "fontSize": 12,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            10
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
