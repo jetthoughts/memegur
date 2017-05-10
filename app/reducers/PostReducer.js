@@ -1,3 +1,3 @@
-import posts from './PostList.json';
+import posts from '../fixtures/PostList.json';
 
 export default () => posts;
