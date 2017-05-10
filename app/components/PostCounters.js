@@ -4,11 +4,13 @@ import PostCounterWithIcon from './PostCounterWithIcon';
 
 class PostCounters extends Component {
   render() {
+    const { ups, comment_count, views } = this.props.post;
+
     return (
       <View style={styles.containerStyle}>
-        <PostCounterWithIcon value={this.props.post.rates} icon='arrow-round-up' />
-        <PostCounterWithIcon value={this.props.post.comments} icon='chatboxes' />
-        <PostCounterWithIcon value={this.props.post.views} icon='eye' />
+        <PostCounterWithIcon value={ups} icon='arrow-round-up' />
+        <PostCounterWithIcon value={comment_count} icon='chatboxes' />
+        <PostCounterWithIcon value={views} icon='eye' />
       </View>
     );
   }

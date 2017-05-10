@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { Image, View, Text } from 'react-native';
 import PostSection from './PostSection';
 import PostCounters from './PostCounters';
+import { DEFAULT_IMAGE_URL } from '../config';
 
 class PostItem extends Component {
   render() {
     const { postContainerStyle, postTitleStyle, postImageStyle } = styles;
-
     return (
       <View style={postContainerStyle}>
         <PostSection style={{ flexDirection: 'column' }}>
@@ -19,8 +19,8 @@ class PostItem extends Component {
           <View style={{ flexDirection: 'row' }}>
             {/* TODO: Image component - https://github.com/EnragedWildkin/memegur/issues/14 */}
             <Image
-              style={postImageStyle}
-              source={{ uri: this.props.post.source }}
+              style={styles.postImageStyle}
+              source={{ uri: this.props.post.link || DEFAULT_IMAGE_URL }}
             />
 
             <PostCounters post={this.props.post}/>
