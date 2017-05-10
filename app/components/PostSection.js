@@ -1,21 +1,22 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
+import { TouchableOpacity } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
-const PostSection = (props) => {
-  return (
-    <View style={[styles.containerStyle, props.style]}>
-      {props.children}
-    </View>
-  );
-};
+export default class PostSection extends Component {
+  render() {
+    return (
+      <TouchableOpacity style={[ styles.containerStyle, this.props.style ]} onPress={Actions.PostShow}>
+        {this.props.children}
+      </TouchableOpacity>
+    );
+  }
+}
 
 const styles = {
   containerStyle: {
     backgroundColor: 'dimgray',
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    position: 'relative'
-  }
+    position: 'relative',
+  },
 };
-
-export default PostSection;
