@@ -7,12 +7,13 @@ import styles from './styles/PostShowHeaderStyles';
 export default class PostShowHeader extends Component {
   render() {
     const iconStyle = StyleSheet.flatten(styles.iconStyle);
+    const topNavBarStyle = StyleSheet.flatten(styles.topNavBar);
 
     return (
-      <Header>
+      <Header style={topNavBarStyle}>
         <Left>
           <Button transparent onPress={Actions.PostIndex}>
-            <Icon name="arrow-back" />
+            <Icon name="arrow-back" style={iconStyle} />
           </Button>
         </Left>
 

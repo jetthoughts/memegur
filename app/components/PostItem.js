@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
 import PostSection from './PostSection';
 import PostCounters from './PostCounters';
+import colors from '../themes/Colors';
 
 class PostItem extends Component {
   render() {
@@ -33,9 +34,11 @@ class PostItem extends Component {
 
 const styles = {
   postContainerStyle: {
-    backgroundColor: '#333',
+    backgroundColor: colors.postBackground,
     padding: 10,
-    paddingBottom: 0
+    paddingBottom: 0,
+    margin: 10,
+    marginBottom: 0,
   },
   postImageStyle: {
     flex: 4,
@@ -47,8 +50,8 @@ const styles = {
     paddingBottom: 10,
     color: '#fff',
     fontSize: 14,
-    flex: 1
-  }
+    flex: 1,
+  },
 };
 
 export default PostItem;

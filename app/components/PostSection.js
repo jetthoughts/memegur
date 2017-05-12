@@ -14,7 +14,6 @@ export default class PostSection extends Component {
 
 const styles = {
   containerStyle: {
-    backgroundColor: 'dimgray',
     justifyContent: 'flex-start',
     flexDirection: 'row',
     position: 'relative',
