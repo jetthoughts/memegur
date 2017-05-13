@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native';
 import { Container } from 'native-base';
 import colors from '../themes/Colors';
 
+import FooterComponent from '../components/FooterComponent';
 import PostShowHeader from '../components/PostShowHeader';
 
 const styles = {
@@ -17,6 +18,7 @@ export default class PostShowComponent extends Component {
       <Container style={styles.container}>
         <PostShowHeader />
         <ScrollView />
+        <FooterComponent />
       </Container>
     );
   }
