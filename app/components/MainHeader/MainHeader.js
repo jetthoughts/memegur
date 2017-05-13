@@ -1,22 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Picker, Left, Right, Icon, Button } from 'native-base';
-import colors from '../themes/Colors';
-
-const styles = {
-  pickerStyle: {
-    width: 100,
-  },
-  header: {
-    backgroundColor: colors.topNavigationBar,
-    borderBottomColor: colors.barShadow,
-  },
-  filter: {
-    color: 'white',
-  },
-  search: {
-    color: 'white',
-  },
-};
+import styles from './styles';
 
 class MainHeader extends Component {
   onButtonPress() {

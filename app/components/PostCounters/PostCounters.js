@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import PostCounterWithIcon from './PostCounterWithIcon';
+import PostCounterWithIcon from '../PostCounterWithIcon';
+import styles from './styles';
 
 class PostCounters extends Component {
   render() {
@@ -11,13 +12,6 @@ class PostCounters extends Component {
         <PostCounterWithIcon value={this.props.post.views} icon='eye' />
       </View>
     );
-  }
-}
-
-const styles = {
-  containerStyle: {
-    flex: 1,
-    justifyContent: 'space-around'
   }
 }
 

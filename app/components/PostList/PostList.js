@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
 import { connect } from 'react-redux';
-import PostItem from './PostItem';
+import PostItem from '../PostItem';
 
 class PostList extends Component {
   componentWillMount() {

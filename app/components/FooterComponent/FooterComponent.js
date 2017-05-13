@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
 import { Footer, FooterTab, Button, Icon } from 'native-base';
-import colors from '../themes/Colors';
-
-const styles = {
-  footer: {
-    backgroundColor: colors.bottomNavigationBar,
-    borderTopColor: colors.barShadow,
-  },
-  icon: {
-    color: 'white',
-  },
-};
+import styles from './styles';
 
 export default class FooterComponent extends Component {
   render() {

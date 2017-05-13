@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import { Header, Icon, Right, Left, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
-import styles from './styles/PostShowHeaderStyles';
+import styles from './styles';
 
 export default class PostShowHeader extends Component {
   render() {

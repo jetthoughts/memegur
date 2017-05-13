@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Icon } from 'native-base';
+import styles from './styles';
 
 class PostCounterWithIcon extends Component {
   render() {
@@ -16,21 +17,5 @@ class PostCounterWithIcon extends Component {
     );
   }
 }
-
-const styles = {
-  postCounterStyle: {
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  iconStyle: {
-    color: 'lightgray',
-    fontSize: 18
-  },
-  textStyle: {
-    fontWeight: 'bold',
-    color: 'lightgray',
-    fontSize: 12
-  }
-};
 
 export default PostCounterWithIcon;

@@ -1,7 +1,7 @@
 import 'react-native';
 import renderer from 'react-test-renderer';
 import React from 'react';
-import PostItem from '../../app/components/PostItem';
+import PostItem from '../../app/components/PostItem/PostItem';
 
 describe('<Post Item />', () => {
   const POST = {

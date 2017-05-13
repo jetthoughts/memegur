@@ -1,7 +1,7 @@
 import 'react-native';
 import renderer from 'react-test-renderer';
 import React from 'react';
-import PostShowHeader from '../../app/components/PostShowHeader';
+import PostShowHeader from '../../app/components/PostShowHeader/PostShowHeader';
 
 describe('<PostShowHeader />', () => {
   it('renders post header', () => {
