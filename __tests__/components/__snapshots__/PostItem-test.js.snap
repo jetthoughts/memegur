@@ -4,7 +4,9 @@ exports[`<Post Item /> renders post information 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#333",
+      "backgroundColor": "#33363f",
+      "margin": 10,
+      "marginBottom": 0,
       "padding": 10,
       "paddingBottom": 0,
     }
@@ -26,7 +28,6 @@ exports[`<Post Item /> renders post information 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "dimgray",
         "flexDirection": "column",
         "justifyContent": "flex-start",
         "opacity": 1,

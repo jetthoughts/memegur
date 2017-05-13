@@ -5,8 +5,8 @@ exports[`<PostShowHeader /> renders post header 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#F8F8F8",
-        "borderBottomColor": "#a7a6ab",
+        "backgroundColor": "#33363f",
+        "borderBottomColor": "#33363f",
         "borderBottomWidth": 0.5,
         "elevation": 3,
         "flexDirection": "row",
@@ -91,11 +91,12 @@ exports[`<PostShowHeader /> renders post header 1`] = `
                 "fontSize": 12,
               },
               Object {
-                "color": "#007aff",
+                "color": "white",
                 "fontSize": 33,
                 "marginLeft": 2,
                 "marginRight": 2,
                 "marginTop": 2,
+                "padding": 5,
                 "paddingTop": 2,
               },
               Object {
@@ -134,7 +135,7 @@ exports[`<PostShowHeader /> renders post header 1`] = `
               "fontSize": 12,
             },
             Object {
-              "color": "#000",
+              "color": "white",
               "fontSize": 30,
               "padding": 5,
             },
@@ -160,7 +161,7 @@ exports[`<PostShowHeader /> renders post header 1`] = `
               "fontSize": 12,
             },
             Object {
-              "color": "#000",
+              "color": "white",
               "fontSize": 30,
               "padding": 5,
             },
@@ -186,7 +187,7 @@ exports[`<PostShowHeader /> renders post header 1`] = `
               "fontSize": 12,
             },
             Object {
-              "color": "#000",
+              "color": "white",
               "fontSize": 30,
               "padding": 5,
             },
@@ -212,7 +213,7 @@ exports[`<PostShowHeader /> renders post header 1`] = `
               "fontSize": 12,
             },
             Object {
-              "color": "#000",
+              "color": "white",
               "fontSize": 30,
               "padding": 5,
             },
