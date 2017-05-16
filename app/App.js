@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-import RootContainer from './containers/RootContainer';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './reducers';
+import createSagaMiddleware from 'redux-saga';
+
+import rootReducer from './reducers';
+import rootSaga from './sagas';
+import RootContainer from './containers/RootContainer';
+
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(
+  rootReducer,
+  applyMiddleware(sagaMiddleware),
+);
+
+sagaMiddleware.run(rootSaga);
 
 export default class App extends Component {
   render() {
     return (
-      <Provider store={createStore(reducers)}>
+      <Provider store={store}>
         <RootContainer />
       </Provider>
     );

@@ -1,35 +1,39 @@
 import React, { Component } from 'react';
-import { ListView } from 'react-native';
+import { FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import PostItem from '../PostItem';
+import { actionCreators } from '../../reducers/GalleryReducer';
 
 class PostList extends Component {
   componentWillMount() {
-    const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2
-    });
-
-    this.dataSource = ds.cloneWithRows(this.props.posts);
+    this.props.loadGallery('hot');
   }
 
-  renderRow(post) {
-    return(
-      <PostItem post={post} />
+  _renderPost({ item }) {
+    return (
+      <PostItem key={item.id} post={item} />
     );
   }
 
+  _keyExtractor = (item, index) => item.id;
+
   render() {
     return(
-      <ListView
-        dataSource={this.dataSource}
-        renderRow={this.renderRow}
+      <FlatList
+        data={this.props.posts}
+        renderItem={this._renderPost}
+        keyExtractor={this._keyExtractor}
       />
     );
   }
 }
 
+const mapDispatchToProps = dispatch => ({
+  loadGallery: (galleryName) => dispatch(actionCreators.galleryRequest(galleryName)),
+});
+
 const mapStateToProps = state => {
-  return { posts: state.posts };
+  return { posts: state.posts.posts };
 };
 
-export default connect(mapStateToProps)(PostList);
+export default connect(mapStateToProps, mapDispatchToProps)(PostList);
