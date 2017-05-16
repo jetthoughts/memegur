@@ -1,7 +1,7 @@
 import { takeLatest } from 'redux-saga/effects';
 
 import API from '../services/Api';
-import { getGallery } from './ImgurSagas';
+import { getGallery } from './GallerySagas';
 import { types } from '../reducers/GalleryReducer';
 
 const api = API.create();
