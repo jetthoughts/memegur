@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import { Container } from 'native-base';
-import colors from '../themes/Colors';
+import colors from '../constants/Colors';
 
 import FooterComponent from '../components/FooterComponent';
 import PostShowHeader from '../components/PostShowHeader';

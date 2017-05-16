@@ -1,4 +1,4 @@
-import colors from '../../themes/Colors';
+import colors from '../../constants/Colors';
 
 const styles = {
   postContainerStyle: {

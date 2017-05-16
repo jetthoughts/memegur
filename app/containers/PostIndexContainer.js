@@ -4,7 +4,7 @@ import { Container } from 'native-base';
 import FooterComponent from '../components/FooterComponent';
 import PostList from '../components/PostList';
 import MainHeader from '../components/MainHeader';
-import colors from '../themes/Colors';
+import colors from '../constants/Colors';
 
 const styles = {
   container: {
