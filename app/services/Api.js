@@ -29,7 +29,7 @@ const create = () => {
 
   return {
     getGallery,
-    getAlbum
+    getAlbum,
   };
 };
 

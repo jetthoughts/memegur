@@ -21,7 +21,7 @@ class PostItem extends Component {
             {/* TODO: Image component - https://github.com/EnragedWildkin/memegur/issues/14 */}
             <Image
               style={postImageStyle}
-              source={{ uri: this.props.post.source }}
+              source={{ uri: this.props.post.link }}
             />
 
             <PostCounters post={this.props.post}/>

@@ -34,7 +34,7 @@ const mapDispatchToProps = dispatch => ({
   loadGallery: (galleryName) => dispatch(galleryActions.galleryRequest(galleryName)),
 });
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return { posts: state.gallery.posts };
 };
 
