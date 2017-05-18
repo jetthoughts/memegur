@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import colors from '../constants/Colors';
 
 import FooterComponent from '../components/FooterComponent';
-import PostShowHeader from '../components/PostShowHeader';
+import AlbumHeader from '../components/AlbumHeader';
 import albumActions from '../actions/Album';
 
 const styles = {
@@ -22,7 +22,7 @@ class Album extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <PostShowHeader />
+        <AlbumHeader />
         <ScrollView />
         <FooterComponent />
       </Container>

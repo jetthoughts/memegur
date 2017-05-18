@@ -4,7 +4,7 @@ import { Header, Icon, Right, Left, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import styles from './styles';
 
-export default class PostShowHeader extends Component {
+export default class AlbumHeader extends Component {
   render() {
     const iconStyle = StyleSheet.flatten(styles.iconStyle);
     const topNavBarStyle = StyleSheet.flatten(styles.topNavBar);
