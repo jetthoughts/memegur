@@ -10,7 +10,7 @@ class PostItem extends Component {
 
     return (
       <View style={postContainerStyle}>
-        <PostSection style={{ flexDirection: 'column' }}>
+        <PostSection style={{ flexDirection: 'column' }} albumId={this.props.post.id}>
           <Text
             numberOfLines={1}
             style={postTitleStyle}>

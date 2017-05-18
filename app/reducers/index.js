@@ -3,6 +3,6 @@ import { albumReducer } from './AlbumReducer';
 import { galleryReducer } from './GalleryReducer';
 
 export default combineReducers({
-  albumReducer,
+  album: albumReducer,
   gallery: galleryReducer,
 });
