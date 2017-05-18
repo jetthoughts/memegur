@@ -12,7 +12,7 @@ export default class PostShowHeader extends Component {
     return (
       <Header style={topNavBarStyle}>
         <Left>
-          <Button transparent onPress={Actions.PostIndex}>
+          <Button transparent onPress={Actions.Gallery}>
             <Icon name="arrow-back" style={iconStyle} />
           </Button>
         </Left>

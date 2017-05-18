@@ -12,7 +12,7 @@ const styles = {
   },
 };
 
-export default class PostShowComponent extends Component {
+export default class Album extends Component {
   render() {
     return (
       <Container style={styles.container}>
