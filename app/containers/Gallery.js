@@ -12,7 +12,7 @@ const styles = {
   },
 };
 
-export default class PostIndexComponent extends Component {
+export default class Gallery extends Component {
   render() {
     return (
       <Container style={styles.container}>
