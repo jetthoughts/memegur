@@ -6,9 +6,9 @@ import PostItem from '../../app/components/PostItem/PostItem';
 describe('<Post Item />', () => {
   const POST = {
     title: 'Test title',
-    source: 'example.com/url',
-    rates: 10,
-    comments: 10,
+    link: 'example.com/url',
+    ups: 10,
+    comment_count: 10,
     views: 10,
   };
   
