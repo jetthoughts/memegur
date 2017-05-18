@@ -21,8 +21,15 @@ const create = () => {
       .then(response => response);
   };
 
+  const getAlbum = (albumId) => {
+    return api
+      .get(`gallery/${albumId}`)
+      .then(response => response);
+  };
+
   return {
     getGallery,
+    getAlbum
   };
 };
 
