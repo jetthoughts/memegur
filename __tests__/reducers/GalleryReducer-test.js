@@ -6,8 +6,6 @@ describe('GalleryReducer', () => {
     const state = { posts: [] };
     const action = { type: 'UNKNOWN_TYPE' };
 
-    deepFreeze(state);
-
     expect(galleryReducer(state, action)).toMatchObject(state);
   });
 
