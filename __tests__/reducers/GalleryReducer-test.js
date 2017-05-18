@@ -1,4 +1,3 @@
-import deepFreeze from 'deep-freeze';
 import galleryActions from '../../app/actions/Gallery';
 import { galleryReducer } from '../../app/reducers/GalleryReducer';
 
