@@ -2,12 +2,12 @@ import { takeLatest } from 'redux-saga/effects';
 
 import API from '../services/Api';
 import { getGallery } from './GallerySagas';
-import { types } from '../reducers/GalleryReducer';
+import { types as GalleryTypes } from '../actions/Gallery';
 
 const api = API.create();
 
 export default function* root() {
   yield [
-    takeLatest(types.GALLERY_REQUEST, getGallery, api),
+    takeLatest(GalleryTypes.GALLERY_REQUEST, getGallery, api),
   ];
 }

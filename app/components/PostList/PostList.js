@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import PostItem from '../PostItem';
-import { actionCreators } from '../../reducers/GalleryReducer';
+import galleryActions from '../../actions/Gallery';
 
 class PostList extends Component {
   componentWillMount() {
@@ -15,7 +15,9 @@ class PostList extends Component {
     );
   }
 
-  _keyExtractor = (item, index) => item.id;
+  _keyExtractor(item, _index) {
+    return item.id;
+  }
 
   render() {
     return(
@@ -29,7 +31,7 @@ class PostList extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  loadGallery: (galleryName) => dispatch(actionCreators.galleryRequest(galleryName)),
+  loadGallery: (galleryName) => dispatch(galleryActions.galleryRequest(galleryName)),
 });
 
 const mapStateToProps = state => {

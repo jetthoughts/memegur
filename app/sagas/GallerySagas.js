@@ -1,5 +1,5 @@
 import { call, put } from 'redux-saga/effects';
-import { actionCreators } from '../reducers/GalleryReducer';
+import galleryActions from '../actions/Gallery';
 
 export function* getGallery(api, action) {
   const { galleryName: section, sort, page } = action;
@@ -9,6 +9,6 @@ export function* getGallery(api, action) {
 
   if (response.ok) {
     const gallery = response.data.data;
-    yield put(actionCreators.gallerySuccess(gallery));
+    yield put(galleryActions.gallerySuccess(gallery));
   }
 }
