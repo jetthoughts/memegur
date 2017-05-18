@@ -35,7 +35,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => {
-  return { posts: state.posts.posts };
+  return { posts: state.gallery.posts };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostList);

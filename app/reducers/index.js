@@ -3,5 +3,5 @@ import { combineReducers } from 'redux';
 import { galleryReducer } from './GalleryReducer';
 
 export default combineReducers({
-  posts: galleryReducer,
+  gallery: galleryReducer,
 });
