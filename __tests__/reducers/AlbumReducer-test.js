@@ -6,14 +6,14 @@ describe('albumReducer', () => {
     const state = { album: {} };
     const action = { type: 'UNKNOWN_TYPE' };
 
-    expect(albumReducer(state, action)).toMatchObject(state);
+    expect(albumReducer(state, action)).toEqual(state);
   });
 
   it('returns default state', () => {
     const action = { type: 'UNKNOWN_TYPE' };
 
-    const expectedState = {};
-    expect(albumReducer(undefined, action)).toMatchObject(expectedState);
+    const expectedState = { album: {} };
+    expect(albumReducer(undefined, action)).toEqual(expectedState);
   });
 
   it('returns state with album info on success action', () => {
@@ -21,6 +21,6 @@ describe('albumReducer', () => {
     const album = { id: 1, title: 'Test' };
     const action = albumActions.albumSuccess(album);
 
-    expect(albumReducer(state, action)).toMatchObject({ album });
+    expect(albumReducer(state, action)).toEqual({ album });
   });
 });

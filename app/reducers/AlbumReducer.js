@@ -1,6 +1,6 @@
 import { types as albumTypes } from '../actions/Album';
 
-const initialState = {};
+const initialState = { album: {} };
 
 export const albumReducer = (state = initialState, action) => {
   const { type, payload } = action;
