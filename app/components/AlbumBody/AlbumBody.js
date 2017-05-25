@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Image, Text, StyleSheet, View, ScrollView } from 'react-native';
 import { Card, CardItem } from 'native-base';
+import AlbumCounters from '../AlbumCounters';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
 
 class AlbumBody extends Component {
+  static propTypes = {
+    album: PropTypes.object.isRequired
+  }
+
   render() {
     return (
       <ScrollView>
@@ -25,19 +30,21 @@ class AlbumBody extends Component {
               </View>
             </View>
           </CardItem>
-          <Image
-            resizeMode={'contain'}
-            style={{aspectRatio: 1}}
-            source={{ uri: `https://i.imgur.com/${this.props.album.cover}.jpg` }}
-          />
+          <View style={{ flex: 1 }}>
+            <Image
+              resizeMode={'contain'}
+              style={{aspectRatio: 1}}
+              source={{ uri: `https://i.imgur.com/${this.props.album.cover}.jpg` }}
+            />
+            <View style={StyleSheet.flatten(styles.postHeaderMeta)}>
+              <Text style={StyleSheet.flatten(styles.postHeaderDescription)}>{this.props.album.description}</Text>
+            </View>
+            <AlbumCounters album={this.props.album}/>
+          </View>
         </Card>
       </ScrollView>
     );
   }
 }
-
-AlbumBody.propTypes = {
-  album: PropTypes.object.isRequired,
-};
 
 export default AlbumBody;

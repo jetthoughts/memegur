@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Icon } from 'native-base';
-import styles from './styles';
+import { block, inline } from './styles';
 
 class PostCounterWithIcon extends Component {
   render() {
-    const { postCounterStyle, iconStyle, textStyle } = styles;
+    const styles = this.props.inline ? inline : block;
+    const { counterStyle, iconStyle, textStyle } = styles;
 
     return (
-      <View style={postCounterStyle}>
-        <Icon active={true} style={iconStyle} name={this.props.icon} />
-        <Text style={textStyle}>
-          {this.props.value}
-        </Text>
+      <View style={counterStyle}>
+        <Icon active style={iconStyle} name={this.props.icon} />
+        <Text style={textStyle}>{this.props.value}</Text>
       </View>
     );
   }
