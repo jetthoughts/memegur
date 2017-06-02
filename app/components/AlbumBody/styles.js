@@ -22,6 +22,11 @@ const styles = StyleSheet.create({
     color: '#BBB',
     fontSize: 12,
   },
+  postHeaderDescription: {
+    color: 'white',
+    fontSize: 16,
+    marginTop: 10,
+  },
 });
 
 export default styles;
